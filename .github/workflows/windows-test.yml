@@ -74,6 +74,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: metacall/distributable-windows
+          repository: sahiljadhav02/distributable-windows
           event-type: test-trigger
           ref: ${{ github.ref }}
