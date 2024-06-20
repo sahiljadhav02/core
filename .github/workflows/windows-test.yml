@@ -76,4 +76,4 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           repository: sahiljadhav02/distributable-windows
           event-type: test-trigger
-          ref: ${{ github.ref }}
+          client-payload: '{"ref": "${{ github.ref }}"}'

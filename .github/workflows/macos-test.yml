@@ -104,6 +104,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: metacall/distributable-macos
+          repository: sahiljadhav02/distributable-macos
           event-type: test-trigger
-          rclient-payload: '{"ref": "${{ github.ref }}"}'
+          client-payload: '{"ref": "${{ github.ref }}"}'
