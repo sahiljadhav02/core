@@ -19,10 +19,10 @@ jobs:
       - name: Windows Workflow Dispatch
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: metacall
+          owner: sahiljadhav02
           repo: distributable-windows
           github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
-          workflow_file_name: ci.yml
+          workflow_file_name: test.yml
           wait_workflow: true
           client_payload: '{"ref": "${{ github.head_ref || github.ref_name }}"}'
           ref: ${{ github.head_ref || github.ref_name }}
@@ -34,7 +34,7 @@ jobs:
       - name: Homebrew Workflow Dispatch
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: metacall
+          owner: sahiljadhav02
           repo: homebrew
           github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
           workflow_file_name: test.yml
@@ -44,7 +44,7 @@ jobs:
       - name: MacOS Workflow Dispatch
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: metacall
+          owner: sahiljadhav02
           repo: distributable-macos
           github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
           workflow_file_name: ci.yml
@@ -59,7 +59,7 @@ jobs:
       - name: Linux Workflow Dispatch
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: metacall
+          owner: sahiljadhav02
           repo: distributable-linux
           github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
           workflow_file_name: ci.yml
